@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="regform2.css" />
+  </head>
+  <body>
+    <h1 id="title"> TECH JOBS </h1>
+    <p id ="description"> all information will send to our hr </p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name: <br><input id="name" placeholder="enter your Full Name" type="text" name="full-name" required /></label> <br>
+        <label id="email-label">Email: <br><input type="email" placeholder="Enter Your Email"id="email" name="email" required /></label><br>
+        <label id="number-label">age: <br><input type="number" placeholder="Enter your Age"name="age" id="number" min="10" max="150"  required /></label>
+     <br>
+     <label> your education</label>
+      <select id="dropdown">
+        <option>choose option </option>
+        <option>none</option>
+        <option> undergraduated </option>
+        <option> graduated</option>
+        <option> professor</option>
+        </select>
+        <br>
+        <label> choose working type: <br><input type="radio" name="account-type" value="1" id="radio" /> <span>Full-Time</span></label>
+        <label><input type="radio" name="account-type" value="2" id="radio" /> <span>Half-Time</span> </label>
+        <label><input type="radio" name="account-type" value="3" id="radio" /> <span>Hourly</span> </label>
+<br>
+<label> what would you like: <br><input type="checkbox" name="like" id="checkbox" value="1"/><span>Front-end Projects</span></label> 
+<label>  <br><input type="checkbox" name="like" id="checkbox" value="2"/> <span>Back-end Projects</span> </label>
+<label> <br><input type="checkbox" name="like" id="checkbox" value="3"/> <span> Challenges </span></label>
+<label> <br><input type="checkbox" name="like" id="checkbox" value="4"/> <span>Web design</span> </label> <br>
+      
+      <label>Tell something about you:<br>
+          <textarea name="bio" rows="5" id="textarea"cols="30" placeholder="I like coding ..."></textarea>
+        </label>
+
+      </fieldset>
+      <input type="submit" id="submit" value="Submit" />
+       </form>
+       <br>
+    </body>
